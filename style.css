@@ -19,6 +19,7 @@ body {
     background-color: white;
     height: auto;
     width: 500px;
+    margin: 40px auto;
 }
 
 .postcard .postcard__header {
