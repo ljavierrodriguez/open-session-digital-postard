@@ -1,0 +1,91 @@
+/* 
+(padding, margin, border) t = top r = right b = bottom l = left
+padding: 10px; trbl 
+padding: 10px 10px; tb lr
+padding: 10px 10px 10px; t lr b
+padding: 10px 10px 10px 10px; t r b l
+
+padding-top
+padding-right
+padding-bottom
+padding-left
+*/
+body {
+    background-color: black;
+}
+
+/* Especificidad (id, class, elem) */
+.postcard {
+    background-color: white;
+    height: auto;
+    width: 500px;
+}
+
+.postcard .postcard__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.postcard .postcard__header h1 {
+    font-family: "Arial";
+}
+
+.postcard .postcard__header img {
+    width: 75px;
+    height: 75px;
+}
+
+.postcard .postcard__content {
+    width: 100%;
+    display: flex;
+    height: auto;
+}
+
+.postcard .postcard__content .postcard__content__left {
+    width: 50%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.postcard .postcard__content .postcard__content__left p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.postcard .postcard__content .postcard__content__right {
+    width: 50%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.postcard .postcard__content .postcard__content__right input {
+    border: 0;
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.postcard .postcard__footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.postcard .postcard__footer .postcard__footer__button {
+    width: 130px;
+    height: 30px;
+}
+
+.postcard .postcard__footer .postcard__footer__button--gray {
+    background-color: gray;
+    color: white;
+}
+
+.postcard .postcard__footer .postcard__footer__button--blue {
+    background-color: blue;
+    color: white;
+}
